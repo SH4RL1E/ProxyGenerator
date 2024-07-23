@@ -50,7 +50,7 @@ app.get('/proxy/random', async (req, res) => {
     if (proxies && proxies.length > 0) {
       res.status(200).json(proxies);
     } else {
-      res.status(400).json({ message: 'No random proxies found' });
+      res.status(400).json({ message: 'No random proxy found' });
     }
   } catch (error) {
     res.status(500).json({ message: 'Internal server error', error: error.message });
